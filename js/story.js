@@ -2,17 +2,17 @@ const story = [
   {
     id: 1,
     userName: 'Muhammad Ali',
-    vid: ['../videos/muhammadali1.mp4', '../videos/muhammadali2.mp4'],
+    vid: [
+      '../videos/Muhammadali.jpg',
+      '../videos/adrinalin.mp4',
+      '../videos/adrinalin.mp4',
+    ],
     userImg: '../videos/Muhammadali.jpg',
   },
   {
     id: 2,
     userName: 'ali',
-    vid: [
-      '../videos/muhammadali1.mp4',
-      '../videos/muhammadali2.mp4',
-      '../videos/Muhammadali.jpg',
-    ],
+    vid: ['../videos/muhammadali2.mp4', '../videos/videologo.jpg'],
     userImg: '../videos/palmalogo.jpg',
   },
   {
@@ -24,7 +24,7 @@ const story = [
   {
     id: 4,
     userName: 'Muhammaddin',
-    vid: ['../videos/muhammadali1.mp4', '../videos/muhammadali1.mp4'],
+    vid: ['../videos/qiziq.mp4', '../videos/muhammadali1.mp4'],
     userImg: '../videos/videologo.jpg',
   },
   {
@@ -36,7 +36,7 @@ const story = [
   {
     id: 6,
     userName: 'Muhammad_sodiq',
-    vid: ['../videos/muhammadali1.mp4', '../videos/instalogo.jpg'],
+    vid: ['../videos/tong.mp4', '../videos/instalogo.jpg'],
     userImg: '../videos/Muhammadali.jpg',
   },
   {
@@ -60,7 +60,7 @@ const story = [
   {
     id: 10,
     userName: 'Javohir',
-    vid: ['../videos/muhammadali1.mp4', '../videos/muhammadali2.mp4'],
+    vid: ['../videos/music.mp4', '../videos/muhammadali2.mp4'],
     userImg: '../videos/Muhammadali.jpg',
   },
 ];

@@ -394,7 +394,7 @@ template {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -412,15 +412,56 @@ template {
 }
 
 .story {
-  border-radius: 10px;
+  border-radius: 5px;
   width: 167px;
   height: 267px;
   cursor: pointer;
   position: relative;
-  overflow: hidden;
   margin: 35px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.story .story-media-move-right {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  right: -15px;
+  background-color: #1a1a1a3d;
+  color: #fff;
+  z-index: 4;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.story .story-media-move-left {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  left: -15px;
+  z-index: 4;
+  top: 50%;
+  background-color: #1a1a1a3d;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .moreimg {
@@ -472,11 +513,53 @@ template {
 }
 
 .container_video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container_video .storySliderContainer {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  gap: 20px;
+}
+
+.container_video .storySliderContainer .vid-story-div {
+  width: 167px;
+}
+
+.container_video .storySliderContainer .vid-story-div video {
   width: 100%;
   height: 100%;
 }
 
-.container_video video {
+.container_video .storySliderContainer .img-story-div {
+  width: 167px;
+  height: 100%;
+}
+
+.container_video .storySliderContainer .img-story-div img {
   width: 100%;
   height: 100%;
 }
@@ -560,8 +643,8 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #1a1a1a16;
   width: 80%;
+  margin-bottom: 10px;
 }
 
 .story-bottom form {
@@ -571,56 +654,69 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 14px;
+  font-size: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2px 1px;
+  gap: 3px;
+  padding: 1px 3px;
 }
 
 .story-bottom form input {
   outline: none;
   background: transparent;
   width: 70%;
-  font-size: 10px;
+  font-size: 8px;
   border: none;
   color: #dbdbdb;
 }
 
 .story-bottom form input::-webkit-input-placeholder {
   color: #dbdbdb;
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .story-bottom form input:-ms-input-placeholder {
   color: #dbdbdb;
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .story-bottom form input::-ms-input-placeholder {
   color: #dbdbdb;
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .story-bottom form input::placeholder {
   color: #dbdbdb;
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .story-bottom span {
-  font-size: 14px;
+  font-size: 10px;
   color: #dbdbdb;
 }
 
+.topposts-slider {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+}
+
+.topposts-slider .onepost {
+  height: 2px;
+  background-color: #fff;
+}
+
 .clickedstory {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 1;
+  margin: 80px;
 }
 
 .usermainimage {
@@ -631,5 +727,13 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.story_move_btns {
+  display: block;
+}
+
+.story_move_btns_none {
+  display: none !important;
 }
 /*# sourceMappingURL=main.css.map */
